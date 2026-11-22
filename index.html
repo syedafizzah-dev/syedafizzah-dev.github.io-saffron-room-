@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Saffron Room | Café &amp; Brunch, Karachi</title>
+<meta name="description" content="The Saffron Room is a quiet, elegant café in Karachi serving saffron coffee, fresh pastries and all-day brunch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#top">The Saffron Room</a>
+  <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span></button>
+  <nav id="links" class="links">
+    <a href="#story">Our story</a><a href="#menu">Menu</a><a href="#visit">Visit</a>
+    <a class="btn small" href="#reserve">Reserve a table</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-text">
+    <h1>Slow mornings,<br><em>golden</em> afternoons.</h1>
+    <p>Saffron coffee, house-baked pastries and an all-day brunch table in the heart of Karachi.</p>
+    <div class="cta"><a class="btn" href="#reserve">Reserve a table</a><a class="btn ghost" href="#menu">See the menu</a></div>
+  </div>
+  <svg class="cup" viewBox="0 0 320 320" role="img" aria-label="A steaming cup of saffron coffee on a saucer">
+    <g class="steam" fill="none" stroke="#D9A441" stroke-width="5" stroke-linecap="round">
+      <path d="M120 120 C100 95 140 80 120 50"/><path d="M160 125 C140 95 180 78 160 40"/><path d="M200 120 C180 95 220 80 200 55"/>
+    </g>
+    <ellipse cx="160" cy="268" rx="120" ry="22" fill="#2C4A3B"/>
+    <ellipse cx="160" cy="262" rx="104" ry="16" fill="#F4EDE0"/>
+    <path d="M70 150 H250 C250 230 215 262 160 262 C105 262 70 230 70 150Z" fill="#F4EDE0"/>
+    <path d="M250 170 C300 160 300 230 240 232" fill="none" stroke="#F4EDE0" stroke-width="14" stroke-linecap="round"/>
+    <ellipse cx="160" cy="150" rx="90" ry="14" fill="#5B2A2A"/>
+    <ellipse cx="160" cy="150" rx="48" ry="6" fill="#D9A441" opacity=".75"/>
+  </svg>
+</section>
+
+<section id="story" class="band ivory">
+  <div class="wrap two">
+    <h2>A café that keeps its voice low and its standards high.</h2>
+    <div>
+      <p>The Saffron Room opened with one idea: a place where the coffee is carefully sourced, the pastry is baked before sunrise, and nobody rushes you.</p>
+      <p>We roast in small batches, infuse our signature syrup with Kashmiri saffron, and set every table with linen, brass and fresh flowers. Come for a quiet espresso, stay for a long brunch.</p>
+      <ul class="facts">
+        <li><strong>Small-batch roasting</strong> Single-origin beans, roasted weekly.</li>
+        <li><strong>Baked daily</strong> Every pastry is made in our kitchen each morning.</li>
+        <li><strong>Private corners</strong> Booths for two, a long table for ten.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="band green">
+  <div class="wrap">
+    <h2>The menu</h2>
+    <div class="tabs" role="tablist" aria-label="Menu categories">
+      <button role="tab" aria-selected="true" data-tab="coffee">Coffee</button>
+      <button role="tab" aria-selected="false" data-tab="pastry">Pastries</button>
+      <button role="tab" aria-selected="false" data-tab="brunch">Brunch</button>
+    </div>
+    <div class="card" id="coffee" role="tabpanel">
+      <div class="item"><span>Saffron latte<small>Espresso, steamed milk, Kashmiri saffron syrup</small></span><i></i><b>Rs 950</b></div>
+      <div class="item"><span>Cardamom cortado<small>Double ristretto, warm milk, crushed green cardamom</small></span><i></i><b>Rs 780</b></div>
+      <div class="item"><span>Single-origin pour-over<small>Brewed to order, changes weekly</small></span><i></i><b>Rs 1,100</b></div>
+      <div class="item"><span>Affogato<small>Vanilla gelato, hot espresso, pistachio crumb</small></span><i></i><b>Rs 1,050</b></div>
+      <div class="item"><span>Cold brew tonic<small>18-hour cold brew, tonic water, orange peel</small></span><i></i><b>Rs 900</b></div>
+    </div>
+    <div class="card" id="pastry" role="tabpanel" hidden>
+      <div class="item"><span>Pistachio croissant<small>Butter laminated dough, pistachio cream</small></span><i></i><b>Rs 850</b></div>
+      <div class="item"><span>Date and walnut tart<small>Salted caramel, crisp shortcrust</small></span><i></i><b>Rs 790</b></div>
+      <div class="item"><span>Almond financier<small>Brown butter, toasted almond</small></span><i></i><b>Rs 450</b></div>
+      <div class="item"><span>Rose cardamom cake<small>Light sponge, rose cream, dried petals</small></span><i></i><b>Rs 890</b></div>
+    </div>
+    <div class="card" id="brunch" role="tabpanel" hidden>
+      <div class="item"><span>Shakshuka<small>Slow-cooked tomato, baked eggs, sourdough</small></span><i></i><b>Rs 1,650</b></div>
+      <div class="item"><span>Smoked salmon toast<small>Cream cheese, capers, dill, rye</small></span><i></i><b>Rs 2,100</b></div>
+      <div class="item"><span>Truffle scrambled eggs<small>Soft eggs, truffle butter, brioche</small></span><i></i><b>Rs 1,850</b></div>
+      <div class="item"><span>Halloumi stack<small>Grilled halloumi, avocado, honey, za’atar</small></span><i></i><b>Rs 1,750</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="reserve" class="band ivory">
+  <div class="wrap two">
+    <div>
+      <h2>Reserve your table</h2>
+      <p>Tell us when you’re coming and we’ll hold the table. We confirm every request by phone within the hour.</p>
+    </div>
+    <form id="form" novalidate>
+      <label>Full name<input name="name" required autocomplete="name"></label>
+      <label>Phone number<input name="phone" type="tel" required autocomplete="tel"></label>
+      <div class="row">
+        <label>Date<input name="date" type="date" required></label>
+        <label>Guests<select name="guests"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8+</option></select></label>
+      </div>
+      <button class="btn" type="submit">Request this table</button>
+      <p id="msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<section id="visit" class="band green">
+  <div class="wrap three">
+    <div><h3>Find us</h3><p>Zamzama Boulevard, DHA Phase 5<br>Karachi, Pakistan</p></div>
+    <div><h3>Hours</h3><p>Every day, 8 am to 11 pm<br>Brunch served until 4 pm</p></div>
+    <div><h3>Contact</h3><p>+92 300 0000000<br>hello@saffronroom.example</p></div>
+  </div>
+</section>
+</main>
+
+<footer><p>© 2026 The Saffron Room. All rights reserved.</p></footer>
+<script src="js/main.js"></script>
+</body>
+</html>
